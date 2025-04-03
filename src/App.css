@@ -1,0 +1,2648 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Homemade+Apple&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Homemade+Apple&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Homemade+Apple&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+body
+{
+    background-color: black;
+    font-family: "Inter", serif;
+}
+.page-white
+{
+    background-color: white;
+    border-radius: 25px;
+    height: 100%;
+    margin: 10px;
+}
+.at-right .video-div {
+position: relative;
+}
+
+.react-player,.insta-player {
+position: absolute;
+padding: 9px;
+top: 0;
+left: 0;
+}
+
+.Overall-Page
+{
+    padding-bottom:50px ;
+}
+/* ------Headers_____Page_____Style */
+.header-container .right-mobile
+{
+     display: none;
+     position: relative;
+}
+.header-container .right-mobile .menu-bg
+{
+      background-color: black;
+      border-radius: 10px;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+}
+.header-container .right-mobile .menu-bg .circle
+{
+     background-color: white;
+     border-radius: 50%;
+     width: 10px;
+     height: 10px;
+     position: absolute;
+     top: 15px;
+     right: 15px;
+     transition: 0.7s;
+}
+
+.header-container .right-mobile .menubg-text
+{
+    background-color: rgb(37, 37, 37);
+    z-index: 11;
+    width: 170px;
+    padding: 30px 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    filter: drop-shadow(1px 3px 17px #acacac4b);
+
+
+}
+.header-container .right-mobile .circle-icon
+{
+     background-color: rgb(255, 0, 0);
+     padding: 1px;
+     border-radius: 50%;
+     color: rgb(255, 255, 255);
+     width: 20px;
+     height: 20px;
+     position: absolute;
+     font-size: 17px;
+     font-weight: 1000;
+     top: 15px;
+     right: 15px;
+     transition: 0.7s;
+}
+.header-container .right-mobile .menubg-text p
+{
+    color: rgb(203, 203, 203);
+    font-size: 20px;
+    padding: 4px 3px;   
+}
+.header-container .right-mobile .bg-text p:hover
+{
+    color: white;
+}
+.header-container .right-mobile .circle 
+{
+     background-color: white;
+     border-radius: 50%;
+     width: 10px;
+     height: 10px;
+     position: absolute;
+     top: 15px;
+     right: 15px;
+     transition: 0.7s;
+}
+/* mobile */
+.home-up-move-arrow
+{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 40px;
+    color: #727272;
+    z-index: 222;
+}
+.home-up-move-arrow:hover
+{
+    color: #202020;
+
+}
+.header-container
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ 
+    padding:15px 1px;
+    flex-wrap: wrap;
+}
+.header-container .left img {
+     width: 100px;
+} 
+.header-container .left .h2
+{
+   font-size: 23px;
+}
+.header-container .left .mobile-h2
+{
+    display: none;
+}
+.header-container .right ,.header-container .right ul
+{
+     list-style: none;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 30px;
+     font-size: 20px;
+     margin-top: 2px;
+     flex-wrap: wrap;
+}
+.header-container .right ul li
+{
+    cursor: pointer;
+    color: #424242;
+}
+
+.header-container .right ul li:hover
+{
+    color: black;
+}
+.header-container .right
+{
+     display: block;
+}
+
+
+/* Page File css Style */
+   /* ---Photo Section---*/
+.photo-section
+{
+    margin: 0px 80px;
+}
+.photo-section .photo
+{     width:100%;
+      height: 600px;
+      border-radius: 20px;
+      background-image: url('./assets/Photo1.png');
+      background-size:cover;
+      background-repeat: no-repeat;
+      background-position: 0px -80px;
+      position: relative;
+}
+.photo-section .photo .photo-bg
+{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    opacity:0.3;
+}
+.photo-section .photo .photo-text
+{
+    position: absolute;
+    font-family: "DM Sans", serif;
+    bottom: 30px;
+    font-size: 50px;
+    letter-spacing: 10px;
+    color: white;
+    margin-left: 15pc;
+    text-shadow: 4px 3px 10px #000000;
+
+}
+.photo-section .photo .photo-text h2
+{
+    font-size: 52px;
+    margin-left: 10px;
+    margin-bottom: -20px;
+    letter-spacing: 2px;
+}
+
+/* ---------About Section------- */
+.about-section , .work-experience ,.contact-us
+{
+      max-width: 90%;
+      margin: 80px 80px;
+}
+.about-section h2 ,.work-experience h2 ,.contact-us h2
+{
+    font-family: "Inter", serif;
+    font-size: 70px;
+   text-shadow: 1px 0px 5px #c6c6c6;
+   color: #2d2d2d;
+}
+.about-section h2 span ,.work-experience h2 span 
+{
+    color: rgb(10, 34, 96);
+}
+.about-section .about-first
+{
+      display: flex;
+      justify-content:space-between;
+      /* gap: 13pc; */
+      align-content: center;
+      padding: 30px 0px;
+}
+.about-section .about-first .txt  
+{
+     color: #5c5c5c;
+     font-size: 25px;
+     max-width: 70%;
+     letter-spacing: 1px;
+     line-height: 45px;
+    text-shadow: 1px 0px 5px #c6c6c6;
+
+}
+.about-section .about-first .txt span
+{
+    margin-left: 35px;
+}
+.about-section .about-first .txt .profile-details
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 200px;
+}
+.about-section .about-first .txt .profile-details .para-first
+{
+   color: #838383;
+   letter-spacing: 0px;
+   font-size: 17px;
+   margin-top: 40px;
+} 
+.about-section .about-first .txt .profile-details .para-second
+{
+    color: black;
+    letter-spacing: 0px;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.4rem;
+   text-shadow: 3px 1px 5px #c6c6c6;
+}
+
+.about-section .about-first .about-photo
+{
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    background-image: url('./assets/photo2.jpg');
+    background-size:50pc;
+    background-repeat: no-repeat;
+    background-position: -170px -70px;
+    margin-top: -30px;
+    filter: drop-shadow(1px 3px 15px #acacac);
+}
+
+
+
+/* -----Work experience page--- */
+
+.work-experience .Theneer-idaivelai
+{
+    display: flex;
+    align-items: center;
+    padding: 70px 0px;
+
+}
+.work-experience .Theneer-idaivelai .logo-photo
+{
+    width: 500px;
+    height: 500px;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.work-experience .Theneer-idaivelai .logo-photo img
+{
+     width: 300px;
+     filter: drop-shadow(2px 10px 35px #575757);
+}
+.work-experience .Theneer-idaivelai .logo-txt
+{
+    margin-left:9pc;
+    width: 50%;
+    margin-bottom: 0px;
+}
+.work-experience .Theneer-idaivelai .logo-txt p
+{
+    font-size: 62px;
+    color: #5e5e5e;
+    text-shadow: 3px 1px 5px #d0d0d0;
+}
+.work-experience .Theneer-idaivelai .logo-txt .logo-txt-img div
+{
+        display: flex;
+        align-items: center;
+        padding: 20px 0px;
+}
+.work-experience .Theneer-idaivelai .logo-txt .logo-txt-img
+{
+    padding: 20px 0px;
+}
+.Theneer-idaivelai .logo-txt .logo-txt-img div img
+{
+   width:55px;
+   filter: drop-shadow(1px 3px 10px #b5b5b5);
+
+}
+.work-experience .Theneer-idaivelai .logo-txt div p
+{
+    font-size: 18px;
+    margin-left: 11px;
+    color: #707070;
+    cursor: pointer;
+   text-shadow: 3px 1px 5px #c6c6c6;
+}
+
+
+
+/* at-content-creator -----*/
+
+
+
+.at-contentcreator ,.pattimandram-section ,.documentary-section ,.vlogger-section
+{
+    background-color: #f5f5f5ef;
+    border-radius: 20px;
+    height: auto;
+    padding: 70px;
+    margin:30px 0px;
+}
+.at-contentcreator .at-text h2
+{
+    text-shadow: 3px 1px 5px #d0d0d0;
+    font-size: 60px;
+    color: #423f3f;
+    text-align: center;
+}
+.at-contentcreator .at-text h2 span{
+    color: black;
+}
+.at-contentcreator .at-text p , .pattimandram-section .patti-text p ,.documentary-section .docu-txt p
+{
+   font-size: 28px;
+   padding: 30px 0px;
+   line-height: 48px;
+   color: #0e0d0d;
+   text-shadow: 3px 1px 5px #b7b7b7;
+}
+.at-contentcreator-photos
+{
+    display: flex;
+    align-items: center;
+    margin: 25px 0px;
+}
+.at-contentcreator-photos .at-left
+{
+    width: 400px;
+    height: 850px;
+    border-radius: 10px;
+    background-image: url('./assets/photo3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -60px 0px;
+    padding: 10px;
+    filter: drop-shadow(1px 3px 10px #c9c9c9);
+}
+.at-contentcreator-photos .at-right 
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+    margin: 20px 0px;
+    margin-left: 40px;
+}
+.at-contentcreator-photos .at-right .video-div
+{
+    width: 380px;
+    height: 250px;
+    background-color: #ffffff;
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+    filter: drop-shadow(1px 3px 10px #c9c9c9);
+
+}
+
+/* ------Host-section -------=*/
+
+.host-section ,.actor-section ,.acting-class-section 
+{
+    padding: 50px 100px;
+}
+.host-section h2 ,.actor-section h2 ,.vikatan-section h2 
+{
+   text-align: center;
+}
+.host-section p ,.actor-section p ,.acting-class-section .acting-cls-text p 
+{ 
+   font-size: 28px;
+   padding: 50px 0px;
+   line-height: 48px;
+   color: #0e0d0d;
+   text-shadow: 3px 1px 5px #cecdcd;
+}
+.host-section .host-photo
+{
+    max-width: 100%;
+    height: 550px;
+    border-radius: 20px;
+    background-image: url('./assets/photo21.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: drop-shadow(1px 3px 10px #b0b0b0);
+}
+.host-section .host-video 
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 50px;
+    column-gap: 110px;
+    margin: 30px 10px;
+    
+}
+.host-section .host-video .video-host-div
+{
+    width: 500px;
+    height: 300px;
+    background-color: #ffffff;
+    border: 3px solid #dddddd;
+    border-radius: 10px;
+    filter: drop-shadow(1px 3px 10px #c9c9c9);
+}
+
+/* ---Vlogger---section-- */
+.vlogger-section .vlogger-first
+{
+    display: flex;
+    gap: 40px;
+}
+.vlogger-section .vlogger-first .vlogger-first-txt
+{
+    width: 60%;
+}
+.vlogger-section .vlogger-first p
+{
+    font-size: 26px;
+    padding: 50px 0px;
+    line-height: 48px;
+    color: #0e0d0d;
+    text-shadow: 3px 1px 5px #cecdcd;
+}
+.vlogger-section .vlogger-first-photo
+{
+    width: 500px;
+    height: 290px;
+    background-image: url('./assets/photo9.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -60px;
+    filter: drop-shadow(1px 3px 10px #c9c9c9);
+    border-radius: 20px;
+}
+.vlogger-section .vlogger-second  , .actor-section .actor-video
+{
+      display: flex;
+      gap: 30px;
+}
+.vlogger-section .vlogger-second .vlogger-second-video-div , .actor-section .actor-video .actor-video-div
+{
+    width: 380px;
+    height: 230px;
+    margin-top: 70px;
+    background-color: #ffffff;
+    border: 3px solid #dddddd;
+    border-radius: 10px;
+    filter: drop-shadow(1px 3px 10px #c9c9c9);
+}
+
+/* actor-section---- */
+.actor-section .actor-photo
+{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 80px;
+}
+.actor-section .actor-photo .actor-photo1
+{
+    width: 280px;
+    height: 350px;
+    background-image: url('./assets/photo4.jpg');
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: 22pc;
+    background-position: -70px 0px;
+    filter: drop-shadow(1px 3px 10px #a7a7a7);
+}
+.actor-section .actor-photo .actor-photo2
+{
+    width:400px;
+    height: 350px;
+    background-color: #5c5c5c;
+    border-radius: 10px;
+    background-image: url('./assets/photo5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(1px 3px 10px #a7a7a7);
+    /* background-position: -60px 0px; */
+}
+
+/* pattimandram ---- section---- */
+
+
+.pattimandram-section .patti-grid .patti-photo
+{
+    margin: 5px;
+    border-radius: 10px;
+    filter: drop-shadow(1px 3px 10px #c6c6c6);
+}
+.pattimandram-section .patti-grid .p-p-1
+{
+    width: 750px;
+    background-image: url('./assets/photo6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+.pattimandram-section .patti-grid .p-p-2
+{
+    width: 460px;
+    background-image: url('./assets/photo7.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+.pattimandram-section .patti-grid .p-p-3
+{
+    background-image: url('./assets/photo8.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 300px;
+    background-position: 0px -8px;
+}
+.pattimandram-section .patti-grid .p-p-4
+{
+    width: 400px;
+    background-image: url('./assets/photo22.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: drop-shadow(1px 3px 10px #c9c9c9);
+    height: 220px;
+}
+.pattimandram-section .patti-grid .p-p-5
+{
+    width: 400px;
+    background-image: url('./assets/photo23.jpg');
+    background-size: cover;
+    background-position: -40px;
+    background-repeat: no-repeat;
+    filter: drop-shadow(1px 3px 10px #c9c9c9);
+    height: 168px;
+    margin-top: 10px;
+    
+}
+.pattimandram-section .patti-grid .p-p-6
+{
+    background-image: url('./assets/photo10.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: drop-shadow(1px 3px 10px #c9c9c9);
+    width: 400px;
+    height: 300px;
+    margin-top: 10px;
+
+}
+.pattimandram-section .patti-video ,.documentary-section .docu-video 
+{
+    width: 500px;
+    height: 300px;
+    background-color: #ffffff;
+    border: 3px solid #dddddd;
+    border-radius: 10px;
+    filter: drop-shadow(1px 3px 10px #c9c9c9);
+    margin-top: 30px;
+}
+
+/* acting--class-section */
+.acting-class-section .acting-cls-videos
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.acting-class-section .acting-cls-video
+{ 
+    width: 500px;
+    height: 300px;
+    background-color: #ffffff;
+    border: 3px solid #dddddd;
+    border-radius: 10px;
+    filter: drop-shadow(1px 3px 10px #e1e1e1);
+}
+.acting-cls-videos .a-c-v1
+{
+     width: 400px;
+     height: 613px;
+}
+.acting-cls-videos .a-c-v2
+{
+     width: 400px;
+     height: 613px;
+}.acting-cls-videos .a-c-v3
+{
+    width: 400px;
+    height: 613px;
+}
+
+/* Documentary Seciton--- */
+.documentary-section .document-photo
+{
+    display: flex;
+    align-items: center;
+    margin: 40px 0px;
+
+}
+.documentary-section .document-photo .docu-photo-d1
+{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.documentary-section .document-photo .docu-photos
+{
+    /* background: #000000; */
+    margin: 5px;
+    border-radius: 10px;
+}
+.documentary-section  .d-p1
+{
+    width: 300px;
+    height: 250px;
+    background-image: url('./assets/photo15.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: drop-shadow(1px 3px 10px #c9c9c9);
+}
+.documentary-section  .d-p2
+{
+    width: 300px;
+    height: 140px;
+    background-image: url('./assets/photo12.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: drop-shadow(1px 3px 10px #c9c9c9);
+}.documentary-section  .d-p3
+{
+    width: 200px;
+    height: 400px;
+    background-image: url('./assets/photo13.jpg');
+    background-size: cover;
+    background-position: 0px -10px;
+    background-repeat: no-repeat;
+    filter: drop-shadow(1px 3px 10px #c9c9c9);
+}.documentary-section  .d-p4
+{
+    width: 650px;
+    height: 400px;
+    background-image: url('./assets/photo14.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: drop-shadow(1px 3px 10px #c9c9c9);
+}
+.photo14
+{
+    display: none;
+}
+
+/* -----vikatan artcile -------section */
+.vikatan-section
+{
+    padding: 50px 0px;
+}
+.vikatan-photo
+{
+    display: flex;
+    margin-top: 50px;
+}
+.vikatan-p-div
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.vikatan-photo .vikatan-photos
+{
+    margin: 15px;
+    border-radius: 10px;
+    filter: drop-shadow(1px 3px 10px #939393);
+
+}
+.vikatan-photo .v-p1
+{
+    width: 800px;
+    height: 700px;
+    background-image: url('./assets/photo16.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -2px;
+    filter: drop-shadow(1px 3px 10px #c9c9c9);
+}
+.vikatan-photo .v-p2
+{
+    width: 500px;
+    height: 315px;
+    background-image: url('./assets/photo17.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: drop-shadow(1px 3px 10px #c9c9c9);
+}.vikatan-photo .v-p3
+{
+    width: 500px;
+    height: 350px;
+    background-image: url('./assets/photo20.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: drop-shadow(1px 3px 10px #c9c9c9);
+}
+
+
+
+/* Gallery Section */
+.gallery-section h2
+{
+    padding:50px 0px;
+}
+.g-div1 , .g-div2 ,.g-div3 , .g-div4 ,.g-div5
+{
+    display: flex;
+}
+.gallery-photos 
+{
+    margin: 10px 0px;
+}
+.gallery-photos .g-photos
+{
+    margin: 10px;
+    border-radius: 10px;
+    filter: drop-shadow(1px 3px 10px #b1b1b1);
+    cursor: pointer;
+}
+.gallery-photos .g-p1
+{
+    width: 450px;
+    height: 500px;
+    background-image: url('./assets/g-p1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery-photos .g-p2
+{
+    width: 400px;
+    height: 450px;
+    background-image: url('./assets/g-p2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 59px;
+}
+.gallery-photos .g-p3
+{
+    width: 400px;
+    height: 325px;
+    background-image: url('./assets/g-p3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -50px;
+}
+.gallery-photos .g-p4
+{
+    width: 870px;
+    height: 500px;
+    background-image: url('./assets/g-p4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat
+}
+.gallery-photos .g-p5
+{
+    width: 400px;
+    height:669px;
+    background-image: url('./assets/g-p5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -50px;
+    margin-top: -160px;
+}
+.gallery-photos .g-p6
+{
+    width: 400px;
+    height: 400px;
+    background-image: url('./assets/g-p6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery-photos .g-p7
+{
+    width: 400px;
+    height: 400px;
+    background-image: url('./assets/g-p7.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}.gallery-photos .g-p8
+{
+    width: 450px;
+    background-image: url('./assets/g-peight.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -130px;
+    height: 400px;
+
+}.gallery-photos .g-p9
+{
+    width: 400px;
+    height: 610px;
+    background-image: url('./assets/g-p9.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}.gallery-photos .g-p10
+{
+    width: 400px;
+    height: 300px;
+    background-image: url('./assets/g-p10.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -100px;
+}
+.gallery-photos .g-p11
+{
+    width: 400px;
+    height: 300px;
+    background-image: url('./assets/g-p11.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.gallery-photos .g-p12
+{
+    width: 450px;
+    height: 610px;
+    background-image: url('./assets/g-p12.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery-photos .g-p13
+{
+    width: 820px;
+    height: 500px;
+    background-image: url('./assets/g-p13.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -200px;
+}
+.gallery-photos .g-p14
+{
+    width: 450px;
+    height: 500px;
+    background-image: url('./assets/g-p14.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* contact-us section */
+
+.contact-us .p1
+{
+    font-size: 28px;
+    padding: 25px 0px;
+    line-height: 48px;
+    width: 60%;
+    color: #535353;
+    text-shadow: 3px 1px 5px #dedede;
+}
+.contact-us .contact-button .c-insta-button  ,.contact-us .contact-button .c-email-button
+{
+   background-color: black;
+   color: white;
+   font-size: 20px;
+   padding: 20px 30px;
+   border-radius: 15px;
+   width: fit-content;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   filter: drop-shadow(4px 10px 15px #919191);
+   cursor: pointer;
+
+}
+.contact-us .contact-button .c-insta-button:hover
+{
+   background-color: rgb(39, 39, 39);
+
+}
+.contact-us .contact-button .c-email-button:hover > .email-icon
+{
+    transform: translateX(3px);
+}
+.contact-us .contact-button .c-email-button
+{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 18px 20px;
+    border: 1px solid #ccc;
+    filter: none;
+}
+.contact-us .contact-button .c-email-button:hover
+{
+    border: 1px solid #919191;
+    
+}
+.contact-us .contact-button
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0px;
+
+}
+.contact-us .contact-button  .insta-icon 
+{
+     color: #ccc;
+     font-size:25px;
+}
+.contact-us .contact-button  .email-icon
+{
+    color: #4a4a4a;
+    font-size:25px;
+}
+.contact-us .contact-input .input
+{
+    padding: 20px 0px;
+    width: 60%;
+}
+.contact-us .contact-input .input input,
+.contact-us .contact-input .input textarea {
+  outline: none;
+  border: none;
+  color: black;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  width: 100%;
+  font-size: 15px;
+  border-radius: 15px;
+  padding: 35px 20px calc(1rem - 1px) 25px;
+  background: rgba(244, 244, 244, 0.925);
+  cursor: pointer;
+  border: 1px solid rgb(235, 235, 235);
+  transition: 0.3s;
+}
+.contact-us .contact-input .input textarea
+{
+    height: 500px;
+    resize: none;
+}
+.contact-us .contact-input .input div {
+    margin: 25px 0px;
+    position: relative;
+  }
+  .contact-us .contact-input .input p {
+    z-index: 2;
+    position: absolute;
+    top: 20px;
+    left: 21px;
+    font-size: 20px; 
+    color: rgb(147, 147, 147);
+    transition: 0.2s;
+    font-weight: 550;
+    width: fit-content;
+  }
+
+  .contact-us .contact-input .input input:hover,
+  .contact-us .contact-input .input textarea:hover{
+    background: rgb(225, 225, 225);
+  }
+  .contact-us .contact-input .input input:valid,
+  .contact-us .contact-input .input input:focus,
+  .contact-us .contact-input .input textarea:valid,
+  .contact-us .contact-input .input textarea:focus {
+    background: #f3f3f391;
+    border: 1px solid #6e6e6eec;
+  }
+  .contact-us .contact-input .input input:valid ~ p,
+  .contact-us .contact-input .input textarea:valid ~ p,
+  .contact-us .contact-input .input input:focus ~ p,
+  .contact-us .contact-input .input textarea:focus ~ p {
+    top: 10px;
+    left: 20px;
+    font-size: 12px;
+    padding: 5px;
+    font-weight: 800;
+    color: #565656ec;
+    text-shadow: 1px 2px 10px #ccc;
+  }
+.contact-us .contact-input .input button
+{
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing:1px;
+    text-shadow: 1px 2px 15px rgb(54, 54, 54);
+    padding: 20px;
+    cursor: pointer;
+}
+.contact-input
+{
+    display: flex;
+    gap: 30px;
+}
+.contact-us .contact-input .input-contact-right
+{
+     display: flex;
+     flex-direction: column;
+
+}
+.contact-us .contact-input .input button:hover
+{
+    background-color: rgb(24, 24, 24);
+}
+.contact-us .contact-input .input-right .instagram-div ,
+.contact-us .contact-input .input-right .whatsapp-div,
+.contact-us .contact-input .input-right .location-div
+{
+      width: 450px;
+     height: 200px;
+     border: 2px solid rgb(235, 235, 235);
+     margin-top: 44px;
+     border-radius: 15px;
+     padding: 30px;
+     position: relative;
+     filter: drop-shadow(1px 5px 16px #efefef);
+     cursor: pointer;
+}
+.contact-us .contact-input .input-right .instagram-div
+{
+    background: url('./assets/instagram.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -70px;
+    background-position: center;
+
+}
+.contact-us .contact-input .input-right .whatsapp-div
+{
+    background: url('./assets/whatsapp.gif') ,#ffffff;
+    background-size: 125px;
+    background-repeat: no-repeat;
+    background-position: 155px 25px;
+    background-position: center;
+
+}
+.contact-us .contact-input .input-right .location-div
+{
+    background: url('./assets/location.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -60px;
+    background-position: center;
+
+}
+.over-div-bg 
+{
+   /* background-color: rgba(236, 236, 236, 0.345); */
+   width: 100%;
+   height: 100%;
+   border-radius: 15px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   transition: 0.1s;
+}
+.insta-over-div-bg 
+{
+    background-color: rgba(255, 91, 228, 0.404);
+
+}
+.whats-over-div-bg 
+{
+    background-color: rgba(91, 255, 102, 0.404);
+
+}
+.location-over-div-bg 
+{
+    background-color: rgba(255, 61, 61, 0.404);
+
+}
+.contact-us .contact-input .input-right .instagram-div:hover > .over-div-bg
+{
+  opacity: 1;
+}
+.contact-us .contact-input .input-right .whatsapp-div:hover > .over-div-bg
+{
+  opacity: 1;
+}
+.contact-us .contact-input .input-right .location-div:hover > .over-div-bg
+{
+  opacity: 1;
+}
+.contact-input .input-right .instagram-div .insta-up-arrowicon , 
+.what-up-arrowicon ,
+.location-up-arrowicon
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    color: #545454;
+    transform: rotate(45deg);
+    background-color: #dedede;
+    border-radius: 50%;
+    filter: drop-shadow(1px 5px 15px #cfcfcf);
+    padding: 3px;
+}
+.contact-input .input-right .instagram-div .insta-profile ,
+.whatsapp-div .whatsapp-profile,
+.contact-input .input-right .location-div .location-profile
+{
+     background-color: #fcfcfc;
+     border: 1px solid rgb(230, 230, 230);
+     width: fit-content;
+     padding: 10px;
+     border-radius:10px;
+     position: absolute;
+     bottom: 20px;
+     left: 20px;
+     font-size: 14px;
+     font-weight: 600;
+}
+
+
+
+
+
+
+/* 
+.contact-us .contact-input .also-in-social
+{
+    background: rgba(244, 244, 244, 0.925);
+    cursor: pointer;
+    border: 1px solid rgb(235, 235, 235);
+    width: 40%;
+    height:auto;
+    margin-top: 45px;
+    border-radius: 15px;
+    padding: 30px;
+}
+.contact-input .also-in-social .in-social-logo
+{
+    background-image: url('./assets/Photo1.png');
+    background-size:200px;
+    background-repeat: no-repeat;
+    background-position: -42px 0px;
+    width: 100px;
+    height:100px;
+    border: 5px solid black;
+    border-radius: 50%;
+    filter: drop-shadow(1px 20px 16px #c5c5c5);
+}
+.contact-input .also-in-social .also-s-p1
+{
+      font-size: 25px;
+      color: #000000;
+      font-weight: 600;
+      padding: 10px 0px;
+      padding-top: 30px;
+      text-shadow: 1px 2px 15px rgb(211, 211, 211);
+
+}
+.contact-input .also-in-social .also-s-p2
+{
+    color: #919191;
+    font-size: 17px;
+    line-height: 25px;
+    width: 100%;
+}
+
+ */
+
+
+
+
+@media  screen and (max-width: 798px) {
+    .home-up-move-arrow
+    {
+        bottom: 20px;
+        right: 20px;
+        font-size: 35px;
+    }
+    
+    .header-container
+    {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+         margin: 10px 0px;
+        padding:15px 0px; 
+        gap: 160px;
+
+    }
+    .header-container .right-mobile
+    {
+        display: block;
+        margin-right: 10px;
+    }
+    .header-container .right
+    {
+        display: none;
+    }
+    .header-container .left .mobile-h2
+    {
+        display: block;
+    }
+    .header-container .left .h2
+    {
+      display: none;
+    }
+
+
+
+
+    /* PhotoSection */
+    .photo-section .photo
+    {
+      background-size:76pc;
+      background-position: -16pc -20px;
+    }
+    .photo-section .photo .photo-text
+    {
+        font-size: 25px;
+        margin-left:3pc;
+        bottom: 50px;
+    }
+    .photo-section .photo .photo-text h2
+    {
+        font-size: 31px;
+        margin-left: 1px;
+        margin-bottom: -7px;
+    }
+    
+    /* Common Style */
+    .about-section h2 ,.work-experience h2 ,.contact-us h2
+    {
+        font-size: 60px;
+    }
+    .about-section , .work-experience ,.contact-us
+    {
+        max-width: 90%;
+        margin: 80px 60px;
+    }
+    /* ABout Section */
+    .about-section .about-first
+    {
+        flex-direction: row-reverse;
+        flex-direction: column-reverse;
+        margin-top: 30px;
+    }
+    .about-section .about-first .txt .profile-details
+    {
+     grid-template-columns: auto auto;
+     column-gap: 100px;
+     opacity: 0.8;
+    }
+    .about-section .about-first .txt 
+    {
+         max-width: 100%;
+         padding: 30px 10px;
+         font-size: 22px;
+    }
+    .about-section .about-first .txt span
+    {
+        margin-left: 0px;
+    }
+    .about-section .about-first .about-photo
+    {
+        width: 60%;
+        background-position: -170px -70px;
+    }
+    .about-section .about-first .txt .profile-details .para-first
+    {
+        font-size: 15px;
+    }
+    .about-section .about-first .txt .profile-details .para-second
+    {
+        font-size: 20px;
+    }
+    
+    /* Work --- Experiance*/
+    .work-experience .Theneer-idaivelai
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: flex-start;
+    }
+    .work-experience .Theneer-idaivelai .logo-photo
+    {
+         width: 100%;    
+    }
+    .work-experience .Theneer-idaivelai .logo-txt
+    {
+         margin-left: 10px;
+         width: 100%;
+    }
+    .work-experience .Theneer-idaivelai .logo-txt .p
+    {
+        line-height: 100px;
+        font-size: 52px;
+
+    }
+    .work-experience .Theneer-idaivelai .logo-txt .logo-txt-img
+    {
+        padding: 0px 0px;
+    }
+    .Theneer-idaivelai .logo-txt .logo-txt-img div img
+    {
+     width:50px;
+    }
+    .work-experience .Theneer-idaivelai .logo-txt div p
+    {
+        font-size: 16px; 
+    }
+
+    /* _at----Content_Creator==--- */
+    .at-contentcreator .at-text h2
+    {
+        font-size: 45px;
+        line-height: 60px;
+    }
+    .at-contentcreator .at-text p , .pattimandram-section .patti-text p ,.documentary-section .docu-txt p
+    {
+        font-size: 22px;
+    }
+    .at-contentcreator-photos {
+         display: flex;
+         flex-direction: column;
+    }
+    .at-contentcreator-photos .at-left
+    {
+         width: 100%;
+         background-position: 0px 0px;
+    }
+    .at-contentcreator-photos .at-right 
+    {
+          display: grid;
+          grid-template-columns: auto;
+          gap: 50px;
+          margin: 50px 0px;
+          margin-left: 0px; 
+    }
+    .at-contentcreator-photos .at-right .video-div
+    {
+        width: 400px;
+    } 
+
+    /* Host Section */
+
+    .host-section ,.actor-section ,.acting-class-section 
+    {
+        padding: 60px 20px;
+    }
+    .host-section p ,.actor-section p ,.acting-class-section .acting-cls-text p 
+    {
+        font-size: 22px;
+    }
+    .host-section .host-photo
+    {
+           height: 350px;
+    }
+    .host-section .host-video 
+    {
+        display: grid;
+        grid-template-columns:auto;
+        gap: 50px;
+        margin: 60px 0px;
+         place-items: center;
+    }
+   
+    /* vlogger --- section */
+    .vlogger-section .vlogger-first
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+    .vlogger-section .vlogger-first-photo
+    {
+        margin:40px 0px;
+    }
+    .vlogger-section .vlogger-first-photo
+    {
+          width: 100%;
+          height: 270px;
+    }
+    .vlogger-section .vlogger-first .vlogger-first-txt
+    {
+            width: 100%;
+    }
+    .vlogger-section .vlogger-first p
+    {
+        width: 100%;
+        padding: 0px;
+        font-size: 22px;
+    }
+    .vlogger-section .vlogger-second 
+    {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 0px;
+         margin-top: -10px;
+    }
+    .vlogger-section .vlogger-second .vlogger-second-video-div 
+    {
+         width: 100%;
+         height: 300px;
+    }
+
+    /* Actor---Section */
+    .actor-section .actor-photo
+    {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .actor-section .actor-photo .actor-photo2
+    {
+        width: 100%;
+        height: 450px;
+    }
+    .actor-section .actor-video 
+    {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .actor-section .actor-video .actor-video-div
+    {
+        width:500px;
+        height: 300px;
+    }
+    /* pattimandram section */
+    .pattimandram-section .patti-grid 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .pattimandram-section .patti-grid .p-p-1
+    {
+        width: 100%;
+        height: 250px;
+        background-position: center;
+    }
+    .pattimandram-section .patti-grid .p-p-2
+    {
+        width: 400px;
+        height: 200px;
+        background-position: center;
+    }
+    .pattimandram-section .patti-grid .p-p-3
+    {
+         width: 280px;
+        height: 200px;
+        background-position: center;
+    }
+    .pattimandram-section .patti-grid .p-p-4
+    {
+        width: 100%;
+        height: 300px;
+        background-position: center;
+    }
+    
+    .pattimandram-section .patti-grid .p-p-5
+    {
+         width: 100%;
+        background-position: center;
+       height: 198px;
+    }
+    .pattimandram-section .patti-grid .p-p-6
+    {
+        width: 100%;
+    }
+    .pattimandram-section .patti-video ,.documentary-section .docu-video 
+    {
+        width: 100%;
+        height: 290px;
+    }
+
+    /* Acting Classs SectionF */
+    .acting-class-section .acting-cls-videos
+    {
+         flex-direction: column;
+         align-items: flex-start;
+         gap: 50px;
+    }
+    
+    /* Documentary Seciton--- */
+    .documentary-section  .d-p1
+    {
+       width: 350px;
+       height: 220px;
+    }
+    .documentary-section  .d-p2
+    {
+           width: 350px;
+           height: 120px;
+    }
+    .documentary-section  .d-p4
+    {
+        display: none;
+    }
+    .documentary-section  .d-p3
+    {
+         height: 350px;
+          width: 150px;
+         background-position: center;
+    }
+    .photo14
+    {
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+        filter: drop-shadow(1px 3px 10px #c9c9c9);
+        margin-top: -25px;
+    }
+/* -----vikatan artcile -------section */
+    .vikatan-photo
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .vikatan-photo .vikatan-p-div
+    {
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+    }
+    .vikatan-photo .v-p1
+    {
+        width: 100%;
+        height: 600px;
+    }
+    .vikatan-photo .v-p2
+    {
+        height: 230px;
+        
+    }
+    .vikatan-photo .v-p3
+    {
+        height: 230px;
+    }
+
+    
+    /* Gallery Section */
+    .gallery-photos .g-p1
+    {
+        width: 450px;
+       height: 250px;
+    }
+    .gallery-photos .g-p2
+    {
+        width: 400px;
+       height: 200px;
+    }
+    .gallery-photos .g-p3
+    {
+        width: 400px;
+       height: 120px;
+    }
+    .gallery-photos .g-p4
+    {
+        width: 870px;
+       height: 200px;
+    }
+    .gallery-photos .g-p5
+    {
+        width: 400px;
+       height: 332px;
+       margin-top: -125px;
+
+    }
+    .gallery-photos .g-p6
+    {
+            width: 400px;
+            height: 200px;
+    }
+    .gallery-photos .g-p7
+    {
+            width: 400px;
+            height: 200px;
+    }
+    .gallery-photos .g-p8
+    {
+            width: 400px;
+            height: 200px;
+       background-position: 0px -20px;
+
+    }
+    .gallery-photos .g-p9
+    {
+        width: 510px;
+       height: 510px;
+    }
+    .gallery-photos .g-p10
+    {
+        width: 300px;
+        height: 300px;
+    background-position: 0px -60px;
+    }
+    .gallery-photos .g-p11
+    {
+        width: 300px;
+       height: 200px;
+
+    }
+    .gallery-photos .g-p12
+    {
+        display: none;
+    }
+    .gallery-photos .g-p13
+    {
+        width: 820px;
+        height: 400px;
+        background-position: 0px 0px;
+    }
+    .gallery-photos .g-p14
+    {
+        width: 450px;
+        height: 400px;
+    }
+
+    /* Contact US */
+   
+    .contact-input
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0px 0px;
+    }
+    .contact-us .p1
+    {
+        font-size: 22px;
+        width: 75%;
+    }
+    .contact-us .contact-input .input
+    {
+        width: 100%;
+        padding: 0px 20px;
+    }
+    .contact-us .contact-input .input-contact-right
+    {
+         display: flex;
+         flex-direction: row;
+         gap: 10px;
+         margin-top: -30px;
+    }
+    .contact-us .contact-input .input-right .instagram-div ,
+    .contact-us .contact-input .input-right .whatsapp-div,
+    .contact-us .contact-input .input-right .location-div
+    {
+        width: 100%;
+        height: 120px;
+    }
+    .contact-us .contact-input .input-right .whatsapp-div
+    {
+        background-position: center;
+    }
+    .contact-input .input-right .instagram-div .insta-up-arrowicon , 
+    .what-up-arrowicon ,
+    .location-up-arrowicon
+    {
+        font-size: 25px;
+    }
+    .contact-input .input-right .instagram-div .insta-profile ,
+    .whatsapp-div .whatsapp-profile,
+    .contact-input .input-right .location-div .location-profile
+    {
+        font-size:10px;
+        bottom: 10px;
+        left: 10px;
+        padding: 8px;
+        border-radius:8px;
+
+
+    }
+    .contact-us .contact-input .input-right .whatsapp-div
+    {
+        background-size: 60px;
+    }
+
+
+    
+}
+@media only screen and (max-width: 710px) {
+    .photo-section .photo .photo-text
+    {
+        font-size: 22px;
+       
+    }
+    .photo-section .photo .photo-text h2
+    {
+        font-size: 27px;
+        
+    }
+    .documentary-section  .d-p1
+    {
+       width: 250px;
+       height: 220px;
+    }
+    .documentary-section  .d-p2
+    {
+           width: 250px;
+           height: 120px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .photo-section .photo
+    {
+         height: 500px;
+         background-size:50pc;
+         background-position: -140px -20px ;
+    }
+    .photo-section
+    {
+        margin: 0px 50px;
+    }
+    .photo-section .photo .photo-text
+    {
+        font-size: 17px;
+    }
+    .photo-section .photo .photo-text h2
+    {
+        font-size: 21px;
+        margin-bottom: 5px;
+    }
+
+     /* Common Style */
+     .about-section h2 ,.work-experience h2 ,.contact-us h2
+     {
+         font-size: 40px;
+     }
+     .about-section , .work-experience ,.contact-us
+     {
+         max-width: 90%;
+         margin: 70px 50px;
+     }
+     .at-contentcreator ,.pattimandram-section ,.documentary-section ,.vlogger-section
+    {
+        padding: 50px;
+        margin:10px 0px;
+    }
+   
+    /* ABout Section */
+    .about-section .about-first .about-photo
+    {
+        width: 70%;
+        height: 350px;
+        background-size:40pc;
+        background-position: -110px -70px;
+    }
+    .about-section .about-first .txt 
+    {
+        font-size: 19px;
+    }
+    .about-section .about-first .txt .profile-details .para-first
+    {
+        font-size: 13px;
+    }
+    .about-section .about-first .txt .profile-details .para-second
+    {
+        font-size: 18px;
+        line-height: 1rem;
+    }
+
+      /* Work --- Experiance*/
+      .work-experience .Theneer-idaivelai .logo-photo
+      {
+            max-width: 60%;
+            height: 300px;
+      }
+      .work-experience .Theneer-idaivelai .logo-photo img
+      {
+        width: 170px;
+      }
+      .work-experience .Theneer-idaivelai .logo-txt .p
+      {
+          line-height: 70px;
+          font-size: 40px;
+      }
+      .work-experience .Theneer-idaivelai .logo-txt .logo-txt-img
+      {
+          padding: 10px 0px;
+      }
+      .Theneer-idaivelai .logo-txt .logo-txt-img div img
+      {
+       width:40px;
+      }
+      .work-experience .Theneer-idaivelai .logo-txt div p
+      {
+          font-size: 14px; 
+      }
+      .work-experience .Theneer-idaivelai .logo-txt .logo-txt-img div
+        {
+                
+                padding: 15px 0px;
+        }
+    /* _at----Content_Creator==--- */
+    .at-contentcreator .at-text h2
+    {
+        font-size: 37px;
+        line-height: 60px;
+    }
+    .at-contentcreator .at-text p , .pattimandram-section .patti-text p ,.documentary-section .docu-txt p
+    {
+        font-size: 18px;
+    }
+    .at-contentcreator-photos .at-left
+    {
+         width: 100%;
+         height: 700px;
+         background-position: 0px 0px;
+    }
+    .host-section p ,.actor-section p ,.acting-class-section .acting-cls-text p 
+    {
+        font-size: 18px;
+    }
+    .host-section .host-photo
+    {
+           height: 300px;
+    }
+    .host-section .host-video 
+    {
+        margin: 60px 0px;
+    }
+    .host-section .host-video .video-host-div
+    {
+        width: 100%;
+        height: 280px;
+    }
+       
+    /* vlogger --- section */
+    .vlogger-section .vlogger-first-photo
+    {
+        margin:40px 0px;
+    }
+    .vlogger-section .vlogger-first p
+    {
+        width: 100%;
+        padding: 0px;
+        font-size: 18px;
+    }
+    .vlogger-section .vlogger-second .vlogger-second-video-div  
+    {
+         width: 100%;
+         height: 250px;
+    }
+    .vlogger-section .vlogger-first-photo
+    {
+          width: 100%;
+          height: 240px;
+    }
+    .vlogger-section .vlogger-first p
+    {
+        width: 100%;
+        padding: 0px;
+        font-size: 18px;
+    }
+     /* Actor---Section */
+     .actor-section .actor-video .actor-video-div
+     {
+         width:100%;
+         height: 270px;
+     }
+
+     /* pattimandram section */
+     .pattimandram-section .patti-grid .p-p-1
+     {
+        background-position: center;
+     }
+     .pattimandram-section .patti-grid .p-p-3
+     {
+        width: 200px;
+     }
+    .pattimandram-section .patti-grid .p-p-4
+    {
+        height: 200px; 
+    }
+    .pattimandram-section .patti-grid .p-p-5
+    {
+            height: 150px;
+    }
+    .pattimandram-section .patti-video ,.documentary-section .docu-video 
+    {
+        width: 100%;
+        height: 250px;
+    }
+    /* acting--classs */
+
+    .acting-class-section .acting-cls-videos
+    {
+        margin-right:70px;
+    }
+    /* .acting-class-section .acting-cls-video
+    {
+        width: 100%;
+    } */
+    .acting-class-section .acting-cls-video
+    {
+         width: 400px;
+         height: 250px;
+    }
+    .acting-cls-videos .a-c-v1
+    {
+        width: 400px;
+        height: 613px;
+    }
+    .acting-cls-videos .a-c-v2
+    {
+        width: 400px;
+        height: 613px;
+    }.acting-cls-videos .a-c-v3
+    {
+        width: 400px;
+        height: 613px;
+    }
+    /* Documentary Seciton--- */
+    .documentary-section  .d-p1
+    {
+       width: 220px;
+       height: 220px;
+    }
+    .documentary-section  .d-p2
+    {
+           width: 220px;
+           height: 120px;
+    }
+    /* -----vikatan artcile -------section */
+    .vikatan-photo .v-p1
+    {
+        width: 100%;
+        height: 400px;
+    }
+    .vikatan-photo .v-p2
+    {
+        height: 180px;
+        
+    }
+    .vikatan-photo .v-p3
+    {
+        height: 180px;
+    }
+    
+    /* Gallery Section */
+    .gallery-photos .g-p1
+    {
+        width: 450px;
+       height: 220px;
+    }
+    .gallery-photos .g-p2
+    {
+        width: 400px;
+       height: 170px;
+    }
+    .gallery-photos .g-p3
+    {
+        width: 400px;
+        height: 90px;
+    }
+    .gallery-photos .g-p4
+    {
+        width: 870px;
+       height: 170px;
+    }
+    .gallery-photos .g-p5
+    {
+        width: 400px;
+       height: 302px;
+       margin-top: -125px;
+
+    }
+    .gallery-photos .g-p6
+    {
+            width: 400px;
+            height: 170px;
+    }
+    .gallery-photos .g-p7
+    {
+            width: 400px;
+            height: 170px;
+    }
+    .gallery-photos .g-p8
+    {
+            width: 400px;
+            height: 170px;
+        background-position: 0px -30px;
+
+    }
+    .gallery-photos .g-p9
+    {
+        width: 510px;
+       height:460px;
+    }
+    .gallery-photos .g-p10
+    {
+        width: 230px;
+        height: 270px;
+        background-position: 0px -60px;
+    }
+    .gallery-photos .g-p11
+    {
+        width: 230px;
+        height: 180px;
+    }
+    .gallery-photos .g-p12
+    {
+        display: none;
+    }
+    .gallery-photos .g-p13
+    {
+        width: 820px;
+        height: 350px;
+        background-position: -20px 0px;
+    }
+    .gallery-photos .g-p14
+    {
+        width: 450px;
+        height: 350px;
+    }
+    
+       /* Contact US */
+        .contact-us .p1
+        {
+            font-size: 18px;
+        }
+        .contact-us .contact-button .c-insta-button  ,.contact-us .contact-button .c-email-button
+       {
+           font-size: 15px;
+           padding: 15px 20px;
+       }
+       .contact-us .contact-button  .insta-icon 
+        {
+            font-size:20px;
+        }
+        .contact-us .contact-button  .email-icon
+        {
+            font-size:20px;
+        }
+
+
+        .contact-us .contact-input .input
+        {
+            width: 100%;
+            padding: 0px 0px;
+            padding-right: 10px;
+        }
+        .contact-us .contact-input .input input,
+        .contact-us .contact-input .input textarea
+        {
+        font-size: 14px;
+         padding: 30px 20px calc(1rem - 1px) 25px;
+        }
+        .contact-us .contact-input .input p 
+        {
+            font-size: 18px;
+        }
+        .contact-us .contact-input .input input:valid ~ p,
+        .contact-us .contact-input .input textarea:valid ~ p,
+        .contact-us .contact-input .input input:focus ~ p,
+        .contact-us .contact-input .input textarea:focus ~ p {
+          top: 7px;
+          left: 20px;
+        }
+        .contact-us .contact-input .input-right .instagram-div ,
+        .contact-us .contact-input .input-right .whatsapp-div,
+        .contact-us .contact-input .input-right .location-div
+        {
+            width: 100%;
+            height: 100px;
+        }
+        .contact-input .input-right .instagram-div .insta-up-arrowicon , 
+        .what-up-arrowicon ,
+        .location-up-arrowicon
+        {
+            font-size: 20px;
+            top: 5px;
+            right: 5px;
+        }
+        .contact-input .input-right .instagram-div .insta-profile ,
+        .whatsapp-div .whatsapp-profile,
+        .contact-input .input-right .location-div .location-profile
+        {
+             font-size:8px;
+             padding: 7px;
+             border-radius:7px;
+            bottom: 10px;
+            left: 10px;
+        }
+        .contact-us .contact-input .input-right .whatsapp-div
+        {
+            background-size: 60px;
+        }
+
+}
+@media only screen and (max-width: 500px) 
+{
+    .photo-section .photo
+    {
+         height: 500px;
+         background-size:49pc;
+         background-position: -160px -20px ;
+    }
+    .photo-section
+    {
+        margin: 0px 30px;
+    }
+    .photo-section .photo .photo-text
+    {
+        font-size: 14px;
+    }
+
+
+     /* Common Style */
+     .about-section h2 ,.work-experience h2 ,.contact-us h2
+     {
+         font-size: 35px;
+     }
+     .about-section , .work-experience ,.contact-us
+     {
+         max-width: 90%;
+         margin: 60px 40px;
+     }
+     .at-contentcreator ,.pattimandram-section ,.documentary-section ,.vlogger-section
+    {
+        padding: 40px;
+        margin:10px 0px;
+    }
+    .about-section .about-first .about-photo
+    {
+        width: 80%;
+    }
+    .about-section .about-first .txt 
+    {
+        font-size: 17px;
+    }
+
+
+    .work-experience .Theneer-idaivelai .logo-photo
+    {
+          max-width: 70%;
+    }
+    .at-contentcreator .at-text h2
+    {
+        font-size: 35px;
+    }
+    .at-contentcreator .at-text p , .pattimandram-section .patti-text p ,.documentary-section .docu-txt p
+    {
+        font-size: 17px;
+    }
+    .at-contentcreator-photos .at-right .video-div
+    {
+        width: 330px;
+        height: 200px;
+    }
+
+    /* host--section */
+    /* Host Section */
+    .host-section p ,.actor-section p ,.acting-class-section .acting-cls-text p 
+    {
+        font-size: 17px;
+    }
+    .host-section .host-video .video-host-div
+    {
+        width: 100%;
+        height: 220px;
+    }
+    /* vlogger --- section */
+    .vlogger-section .vlogger-first-photo
+    {
+        margin:40px 0px;
+        background-size: 27pc;
+        width: 100%;
+        height: 200px;
+        background-position: -80px -10px;
+    }
+    .vlogger-section .vlogger-first p
+    {
+        font-size: 17px;
+    }
+    .vlogger-section .vlogger-second .vlogger-second-video-div  
+    {
+         width: 100%;
+         height: 200px;
+    }
+
+    .actor-section .actor-video .actor-video-div
+    {
+        width:100%;
+        height: 230px;
+    }
+
+      /* pattimandram section */
+      .pattimandram-section .patti-grid .p-p-3
+      {
+         width: 260px;
+      }
+
+      .documentary-section  .d-p1
+        {
+        width: 200px;
+        height: 220px;
+        }
+        .documentary-section  .d-p2
+        {
+            width: 200px;
+            height: 120px;
+            background-size: 16pc;
+            background-position: -30px;
+        }
+    .pattimandram-section .patti-video ,.documentary-section .docu-video 
+    {
+    height: 200px;
+    }
+
+    .acting-class-section .acting-cls-video
+    {
+         width: 300px;
+         /* height: 250px; */
+    }
+    .acting-cls-videos .a-c-v1
+    {
+        /* width: 400px; */
+        height: 613px;
+    }
+    .acting-cls-videos .a-c-v2
+    {
+        /* width: 400px; */
+        height: 613px;
+    }.acting-cls-videos .a-c-v3
+    {
+        /* width: 400px; */
+        height: 613px;
+    }
+    /* Documentary Seciton--- */
+    .documentary-section  .d-p1
+    {
+       width: 220px;
+       height: 220px;
+    }
+    .documentary-section  .d-p2
+    {
+           width: 220px;
+           height: 120px;
+    }
+
+      /* -----vikatan artcile -------section */
+      .vikatan-photo .v-p1
+      {
+          width: 97%;
+          height: 400px;
+      }
+      .vikatan-photo .v-p2
+      {
+          height: 180px;
+          
+      }
+      .vikatan-photo .v-p3
+      {
+          height: 180px;
+      }
+
+
+          /* Gallery Section */
+    .gallery-photos .g-p1
+    {
+        width: 450px;
+       height: 190px;
+    }
+    .gallery-photos .g-p2
+    {
+        width: 400px;
+       height: 140px;
+    }
+    .gallery-photos .g-p3
+    {
+        width: 400px;
+        height: 100px;
+        background-size: 10pc;
+    }
+    .gallery-photos .g-p4
+    {
+        width: 870px;
+       height: 150px;
+    }
+    .gallery-photos .g-p5
+    {
+        width: 400px;
+       height: 244px;
+       margin-top: -87px;
+       background-position: -40px;
+
+    }
+    .gallery-photos .g-p6
+    {
+            width: 400px;
+            height: 170px;
+    }
+    .gallery-photos .g-p7
+    {
+            width: 400px;
+            height: 170px;
+            background-position: -40px;
+    }
+    .gallery-photos .g-p8
+    {
+            width: 400px;
+            height: 170px;
+            background-position: 0px -30px;
+
+    }
+    .gallery-photos .g-p9
+    {
+        width: 510px;
+       height:400px;
+       background-position: -20px 0px;
+
+    }
+    .gallery-photos .g-p10
+    {
+        width: 230px;
+        height: 210px;
+        background-position: 0px -60px;
+    }
+    .gallery-photos .g-p11
+    {
+        width: 230px;
+        height: 180px;
+    }
+    .gallery-photos .g-p12
+    {
+        display: none;
+    }
+    .gallery-photos .g-p13
+    {
+        width: 820px;
+        height: 310px;
+        background-position: -20px 0px;
+    }
+    .gallery-photos .g-p14
+    {
+        width: 450px;
+        height: 310px;
+    }
+      
+    /* Contact US */
+    .contact-us .p1
+    {
+        font-size: 17px;
+    }
+    .contact-us .contact-button .c-insta-button  ,.contact-us .contact-button .c-email-button
+    {
+        font-size: 13px;
+        padding: 14px 20px;
+    }
+    .contact-us .contact-button  .insta-icon 
+     {
+         font-size:18px;
+     }
+     .contact-us .contact-button  .email-icon
+     {
+         font-size:18px;
+     }
+}
+
+
+@media only screen and (max-width: 450px) 
+{
+    .photo-section
+    {
+        margin: 0px 30px;
+    }
+    .about-section , .work-experience ,.contact-us
+    {
+        max-width: 90%;
+        margin: 80px 30px;
+    }
+
+    .at-contentcreator ,.pattimandram-section ,.documentary-section ,.vlogger-section
+    {
+
+        padding: 30px;
+    }
+    .photo-section .photo .photo-text
+    {
+        font-size: 13px;
+    letter-spacing: 4px;
+
+    }
+    .photo-section .photo .photo-text h2
+    {
+        font-size: 21px;
+        margin-bottom: 5px;
+    }
+
+    .about-section .about-first .about-photo
+    {
+        width: 90%;
+    }
+    .work-experience .Theneer-idaivelai .logo-photo
+    {
+        width: 500px;
+        height: 250px;
+    }
+    .work-experience .Theneer-idaivelai .logo-photo img
+    {
+        width: 160px;
+    }
+
+    .work-experience .Theneer-idaivelai .logo-txt .p
+    {
+         font-size: 35px;
+    }
+    .at-contentcreator .at-text h2
+    {
+        font-size: 30px;
+    }
+    .at-contentcreator .at-text p, .pattimandram-section .patti-text p, .documentary-section .docu-txt p {
+        font-size: 16px;
+    }
+    .at-contentcreator-photos .at-left {
+        width: 100%;
+        height: 700px;
+        background-position: -40px 0px;
+    }
+    .host-section p ,.actor-section p ,.acting-class-section .acting-cls-text p 
+    {
+        font-size: 17px;
+    }
+    .at-contentcreator-photos .at-right .video-div
+    {
+        width: 300px;
+        height: 180px;
+    }
+    .host-section .host-video .video-host-div
+    {
+        width: 100%;
+        height: 200px;
+    }
+
+    .vlogger-section .vlogger-second .vlogger-second-video-div  
+    {
+         width: 100%;
+         height: 190px;
+    }
+    .actor-section .actor-video .actor-video-div
+    {
+        width:100%;
+        height: 200px;
+    }
+    .pattimandram-section .patti-video ,.documentary-section .docu-video 
+    {
+    height: 190px;
+    }
+
+    .documentary-section  .d-p1
+    {
+    width: 170px;
+    height: 220px;
+    }
+    .documentary-section  .d-p2
+    {
+        width: 170px;
+        height: 120px;
+        background-size: 14.5pc;
+        background-position: -30px;
+    }
+
+    .gallery-photos .g-p1
+    {
+        width: 450px;
+       height: 170px;
+    }
+    .gallery-photos .g-p2
+    {
+        width: 400px;
+       height: 120px;
+    }
+    .gallery-photos .g-p3
+    {
+        width: 400px;
+        height: 90px;
+        background-size: 10pc;
+    }
+    .gallery-photos .g-p4
+    {
+        width: 870px;
+       height: 130px;
+    }
+    .gallery-photos .g-p5
+    {
+        width: 400px;
+       height: 224px;
+       margin-top: -80px;
+       background-position: -50px;
+
+    }
+    .gallery-photos .g-p6
+    {
+            width: 400px;
+            height: 170px;
+    }
+    .gallery-photos .g-p7
+    {
+            width: 400px;
+            height: 170px;
+            background-position: -40px;
+    }
+    .gallery-photos .g-p8
+    {
+            width: 400px;
+            height: 170px;
+            background-size: 8pc;
+            background-position: 0px -30px;
+
+    }
+    .gallery-photos .g-p9
+    {
+        width: 510px;
+       height:350px;
+       background-position: -20px 0px;
+       display: none;
+
+    }
+    .gallery-photos .g-p10
+    {
+        width:310px;
+        height: 180px;
+        background-position: 0px -60px;
+    }
+    .gallery-photos .g-p11
+    {
+        width: 310px;
+        height: 160px;
+    }
+    .gallery-photos .g-p12
+    {
+        display: none;
+    }
+    .gallery-photos .g-p13
+    {
+        width: 820px;
+        height: 280px;
+        background-position: -20px 0px;
+    }
+    .gallery-photos .g-p14
+    {
+        width: 450px;
+        height: 280px;
+    }
+
+    .contact-input .input-right .instagram-div .insta-profile ,
+        .whatsapp-div .whatsapp-profile,
+        .contact-input .input-right .location-div .location-profile
+        {
+             font-size:8px;
+             padding: 5px;
+             border-radius:7px;
+            bottom: 10px;
+            left: 10px;
+        }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
